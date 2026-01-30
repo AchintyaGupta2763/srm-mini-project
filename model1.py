@@ -6,7 +6,7 @@ from asgiref.wsgi import WsgiToAsgi  # Convert Flask to ASGI
 app = Flask(__name__)
 
 # Load the trained model
-model = load_model('model1/best_model.keras')
+model = load_model('model/best_model.keras')
 
 @app.route('/predict', methods=['POST'])
 def predict():
